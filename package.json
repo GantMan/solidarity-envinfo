@@ -1,0 +1,12 @@
+{
+  "name": "solidarity-envinfo",
+  "version": "1.0.0",
+  "repository": "https://github.com/<me>/solidarity-envinfo",
+  "description": "This solidarity plugin allows advanced reporting features using envinfo",
+  "author": "Super Awesome Coder",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "test": "echo not yet"
+  }
+}
