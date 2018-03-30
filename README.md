@@ -1,8 +1,8 @@
 <a href='https://infinitered.github.io/solidarity/'><img src='https://github.com/infinitered/solidarity/raw/master/_art/plugin.jpg' align='left' height="60"/></a>
 
 # solidarity-envinfo
-## Solidarity and EnvInfo Plugin :heart:
-This plugin allows you to write advanced rules for Solidarity and capitalize on awesome features provided by EnvInfo.
+## Solidarity and envinfo Plugin :heart:
+This plugin allows you to write advanced rules for Solidarity and capitalize on awesome features provided by envinfo.
 
 #### Plugin adds the following rules:
 
@@ -10,7 +10,7 @@ This plugin allows you to write advanced rules for Solidarity and capitalize on 
 * `enforceReport` - This rule add items you identify to your `solidarity report` output, **AND** enforces that all identified items exist during a solidarity check.
 
 ## Use:
-The envinfo plugin allows you to add whatever info `envInfo` can report on, to your solidarity report.
+The envinfo plugin allows you to add whatever info `envinfo` can report on, to your solidarity report.
 
 
 #### _Example 1_
@@ -19,7 +19,7 @@ Here's an example of a Solidarity requirement that adds NPM Packages and their a
 ```json5
   "Report Important Stuff": [
     {
-      "rule": "custom", "plugin": "envInfo", "name": "infoReport",
+      "rule": "custom", "plugin": "envinfo", "name": "infoReport",
       "report": {
         "npmPackages": [
           "victory-native",
@@ -36,7 +36,7 @@ Here's an example of a Solidarity requirement adds a report of Elixir version, a
 ```json5
   "You Better Have Elixir!": [
     {
-      "rule": "custom", "plugin": "envInfo", "name": "enforceReport",
+      "rule": "custom", "plugin": "envinfo", "name": "enforceReport",
       "report": { "Languages": ["Elixir"] }
     }
   ]
@@ -73,6 +73,6 @@ This plugin will automatically be picked up by Solidarity (which should already 
 Solidarity is a file of environment rules which can be programatically enforced.  It's a light weight environment checker for automation.
 #### [Read More About Solidarity Here](https://github.com/infinitered/solidarity)
 
-## :newspaper:  What is EnvInfo?
-EnvInfo is a module for gathering environment information.  It's a robust data collector for environments.
-#### [Read More about EnvInfo Here](https://github.com/tabrindle/envinfo)
+## :newspaper:  What is envinfo?
+envinfo is a module for gathering environment information.  It's a robust data collector for environments.
+#### [Read More about envinfo Here](https://github.com/tabrindle/envinfo)
