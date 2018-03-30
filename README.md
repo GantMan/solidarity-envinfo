@@ -4,7 +4,7 @@
 ## Solidarity and EnvInfo Plugin :heart:
 This plugin allows you to write advanced rules for Solidarity and capitalize on awesome features provided by EnvInfo.
 
-Plugin adds the following rules:
+#### Plugin adds the following rules:
 
 * `infoReport` - This rule will add the items you want to your `solidarity report` output.
 * `enforceReport` - This rule add items you identify to your `solidarity report` output, **AND** enforces that all identified items exist during a solidarity check.
@@ -13,7 +13,7 @@ Plugin adds the following rules:
 The envinfo plugin allows you to add whatever info `envInfo` can report on, to your solidarity report.
 
 
-_Example 1_
+#### _Example 1_
 
 Here's an example of a Solidarity requirement that adds NPM Packages and their associated versions to the `solidarity report`
 ```json5
@@ -30,7 +30,7 @@ Here's an example of a Solidarity requirement that adds NPM Packages and their a
   ]
 ```
 
-_Example 2_
+#### _Example 2_
 
 Here's an example of a Solidarity requirement adds a report of Elixir version, and will **FAIL** if Elixir is not installed!
 ```json5
@@ -66,10 +66,13 @@ Here's the kitchen-sink list of goodies you can use in your report object.
 
 ## Install:
 `npm i solidarity-envinfo` or `yarn add solidarity-envinfo`
+
 This plugin will automatically be picked up by Solidarity (which should already be installed).
 
-## :newspaper: What is Solidarity?  What is EnvInfo?
-
+## :newspaper: What is Solidarity?  
+Solidarity is a file of environment rules which can be programatically enforced.  It's a light weight environment checker for automation.
 #### [Read More About Solidarity Here](https://github.com/infinitered/solidarity)
 
+## :newspaper:  What is EnvInfo?
+EnvInfo is a module for gathering environment information.  It's a robust data collector for environments.
 #### [Read More about EnvInfo Here](https://github.com/tabrindle/envinfo)
