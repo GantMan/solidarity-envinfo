@@ -4,7 +4,7 @@ const getAndroidEnvData = require('./helpers/getAndroidEnvData')
 module.exports = (context) => {
   // Register this plugin
   context.addPlugin({
-    name: 'envInfo',
+    name: 'envinfo',
     description: 'This solidarity plugin allows advanced reporting features using envinfo',
     rules: {
       infoReport: {
@@ -23,7 +23,7 @@ module.exports = (context) => {
           report.customRules.push({
             title: 'Requested Environment Info',
             table: [
-              ['EnvInfo Key', 'Value'],
+              ['Key', 'Value'],
               [projectAPIMessage, projectBuildToolsMessage],
             ]
           })
