@@ -13,7 +13,7 @@ This plugin allows you to write advanced rules for Solidarity and capitalize on 
 The envinfo plugin allows you to add whatever info `envinfo` can report on, to your solidarity report.
 
 
-#### _Example 1_
+#### _Example 1: Just report some packages_
 
 Here's an example of a Solidarity requirement that adds NPM Packages and their associated versions to the `solidarity report`
 ```json5
@@ -30,7 +30,7 @@ Here's an example of a Solidarity requirement that adds NPM Packages and their a
   ]
 ```
 
-#### _Example 2_
+#### _Example 2: Report and enforce language is found_
 
 Here's an example of a Solidarity requirement adds a report of Elixir version, and will **FAIL** if Elixir is not installed!
 ```json5
