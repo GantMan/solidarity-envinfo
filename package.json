@@ -8,5 +8,8 @@
   "private": false,
   "scripts": {
     "test": "echo not yet"
+  },
+  "peerDependencies": {
+    "solidarity": "^2.1.0"
   }
 }

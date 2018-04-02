@@ -1,4 +1,5 @@
 const buildReport = require('./helpers/buildReport')
+const checkReport = require('./helpers/checkEnv')
 module.exports = (context) => {
   // Register this plugin
   context.addPlugin({
@@ -7,6 +8,7 @@ module.exports = (context) => {
     rules: {
       infoReport: { report: buildReport },
       enforceReport: {
+        check: checkReport,
         report: buildReport
       }
     }
