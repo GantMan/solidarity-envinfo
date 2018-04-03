@@ -1,14 +1,17 @@
 module.exports = async (rule, context) => {
   const envinfo = require('envinfo')
-  const { values, map, toPairs, contains, reject, isEmpty } = require('ramda')
+  const { values, map, toPairs, contains, reject, isEmpty, filter, equals } = require('ramda')
+  const notFound = 'Not Found'
 
   const envResults = toPairs(JSON.parse(envinfo.run(rule.report, { json: true })))
 
   const failures = map(envItem => {
     const [topLevel, results] = envItem
 
-    if (contains('Not Found', values(results))) {
-      return `Env Fail for ${topLevel} -> ${toPairs(results)}`
+    if (contains(notFound, values(results))) {
+      const failingItems = toPairs(filter(equals(notFound), results))
+      const cleanFail = failingItems.map((item) => `${item[0]} ${item[1]}`)
+      return `${topLevel} Fail - ${cleanFail.join(', ')}`
     } else {
       return ''
     }
