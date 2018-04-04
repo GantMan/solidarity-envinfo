@@ -7,9 +7,14 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "test": "echo not yet"
+    "test": "echo not yet",
+    "shipit": "np"
   },
   "peerDependencies": {
     "solidarity": "^2.1.0"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "np": "^2.20.1"
   }
 }
