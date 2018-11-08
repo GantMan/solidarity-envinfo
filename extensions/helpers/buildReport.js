@@ -2,7 +2,7 @@ module.exports = async (rule, context, report) => {
   const envinfo = require('envinfo')
   const { toPairs, map } = require('ramda')
 
-  const envResults = toPairs(JSON.parse(envinfo.run(rule.report, { json: true })))
+  const envResults = toPairs(JSON.parse(await envinfo.run(rule.report, { json: true, showNotFound: true })))
 
   const envTables = map(envItem => {
     const [topLevel, results] = envItem
